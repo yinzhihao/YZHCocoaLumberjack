@@ -1,0 +1,25 @@
+PODS:
+  - CocoaLumberjack (3.8.0):
+    - CocoaLumberjack/Core (= 3.8.0)
+  - CocoaLumberjack/Core (3.8.0)
+  - YZHCocoaLumberjack (0.1.0):
+    - CocoaLumberjack (~> 3.8.0)
+
+DEPENDENCIES:
+  - YZHCocoaLumberjack (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - CocoaLumberjack
+
+EXTERNAL SOURCES:
+  YZHCocoaLumberjack:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CocoaLumberjack: 78abfb691154e2a9df8ded4350d504ee19d90732
+  YZHCocoaLumberjack: f486a049739f86b99d817cc3c7553100d547fc41
+
+PODFILE CHECKSUM: da78db482c3057b34e3c910fbb312c878be6e413
+
+COCOAPODS: 1.11.3

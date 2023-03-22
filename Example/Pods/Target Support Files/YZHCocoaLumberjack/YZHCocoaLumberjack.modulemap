@@ -1,0 +1,6 @@
+framework module YZHCocoaLumberjack {
+  umbrella header "YZHCocoaLumberjack-umbrella.h"
+
+  export *
+  module * { export * }
+}

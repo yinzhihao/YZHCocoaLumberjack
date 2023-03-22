@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '12.0'
+
+target 'YZHCocoaLumberjack_Example' do
+  pod 'YZHCocoaLumberjack', :path => '../'
+
+  target 'YZHCocoaLumberjack_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
