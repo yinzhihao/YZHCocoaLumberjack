@@ -40,6 +40,8 @@
 		0422E8ACA46A9FD1B33CF050 /* Pods-YZHCocoaLumberjack_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YZHCocoaLumberjack_Example.release.xcconfig"; path = "Target Support Files/Pods-YZHCocoaLumberjack_Example/Pods-YZHCocoaLumberjack_Example.release.xcconfig"; sourceTree = "<group>"; };
 		053E3A9A913486B93AD987C6 /* Pods-YZHCocoaLumberjack_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YZHCocoaLumberjack_Example.debug.xcconfig"; path = "Target Support Files/Pods-YZHCocoaLumberjack_Example/Pods-YZHCocoaLumberjack_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		1F8BB72816D2B910AC1B56F3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		30198FC329CC3A6A00ABD517 /* publish.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = publish.sh; path = ../publish.sh; sourceTree = "<group>"; };
+		30198FC429CC3B0B00ABD517 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		34C05726F911986BC66E70E3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* YZHCocoaLumberjack_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YZHCocoaLumberjack_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -60,13 +62,12 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8152D07D48310D25D8FD46CE /* Pods-YZHCocoaLumberjack_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YZHCocoaLumberjack_Tests.release.xcconfig"; path = "Target Support Files/Pods-YZHCocoaLumberjack_Tests/Pods-YZHCocoaLumberjack_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B95F23C6008683C0981EF851 /* Pods_YZHCocoaLumberjack_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YZHCocoaLumberjack_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0CAC1BDE7D0820BC9785288 /* Pods-YZHCocoaLumberjack_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YZHCocoaLumberjack_Tests.debug.xcconfig"; path = "Target Support Files/Pods-YZHCocoaLumberjack_Tests/Pods-YZHCocoaLumberjack_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		E776D18E6801845D792A70A8 /* Pods_YZHCocoaLumberjack_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YZHCocoaLumberjack_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FC893840B19BE7CD97E9FFA6 /* YZHCocoaLumberjack.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = YZHCocoaLumberjack.podspec; path = ../YZHCocoaLumberjack.podspec; sourceTree = "<group>"; };
+		FC893840B19BE7CD97E9FFA6 /* YZHCocoaLumberjack.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = YZHCocoaLumberjack.podspec; path = ../YZHCocoaLumberjack.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +193,7 @@
 				FC893840B19BE7CD97E9FFA6 /* YZHCocoaLumberjack.podspec */,
 				1F8BB72816D2B910AC1B56F3 /* README.md */,
 				34C05726F911986BC66E70E3 /* LICENSE */,
+				30198FC329CC3A6A00ABD517 /* publish.sh */,
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
@@ -257,12 +259,10 @@
 			};
 			buildConfigurationList = 6003F585195388D10070C39A /* Build configuration list for PBXProject "YZHCocoaLumberjack" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
-				Base,
 			);
 			mainGroup = 6003F581195388D10070C39A;
 			productRefGroup = 6003F58B195388D20070C39A /* Products */;
@@ -413,7 +413,7 @@
 		71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				71719F9E1E33DC2100824A3D /* Base */,
+				30198FC429CC3B0B00ABD517 /* en */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";

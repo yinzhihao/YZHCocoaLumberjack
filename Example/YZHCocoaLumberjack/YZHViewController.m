@@ -7,6 +7,7 @@
 //
 
 #import "YZHViewController.h"
+#import <YZHCocoaLumberjack/YZHCocoaLumberjack.h>
 
 @interface YZHViewController ()
 
@@ -18,6 +19,16 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    DDLogError(@"DDLogError");
+    DDLogWarn(@"DDLogWarn");
+    DDLogInfo(@"DDLogInfo");
+    DDLogDebug(@"DDLogDebug");
+    
+    YZHLogError(@"YZHLogError");
+    YZHLogWarn (@"YZHLogWarn");
+    YZHLogInfo(@"YZHLogInfo");
+    YZHLogDebug(@"YZHLogDebug");
 }
 
 - (void)didReceiveMemoryWarning

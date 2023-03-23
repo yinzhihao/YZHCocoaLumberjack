@@ -10,6 +10,9 @@
 #endif
 #endif
 
+#import "YZHCocoaLumberjack.h"
+#import "YZHLogFormatter.h"
+#import "YZHLogManager.h"
 
 FOUNDATION_EXPORT double YZHCocoaLumberjackVersionNumber;
 FOUNDATION_EXPORT const unsigned char YZHCocoaLumberjackVersionString[];

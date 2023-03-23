@@ -7,12 +7,17 @@
 //
 
 #import "YZHAppDelegate.h"
+#import <YZHCocoaLumberjack/YZHCocoaLumberjack.h>
 
 @implementation YZHAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    [[YZHLogManager sharedInstance] enableFileLogSystem];
+    YZHLogInfo(@"日志文件地址:\n%@", [[YZHLogManager sharedInstance] getCurrentLogFilePath]);
+    
     return YES;
 }
 
