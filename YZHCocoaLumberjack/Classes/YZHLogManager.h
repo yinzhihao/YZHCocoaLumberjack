@@ -18,13 +18,13 @@
  */
 static const DDLogLevel ddLogLevel = DDLogLevelDebug;
 
-#define YZHLogError(...) DDLogError(@"%s 第%d行 %@\n",__func__,__LINE__,[NSString stringWithFormat:__VA_ARGS__])
+#define YZHLogError(...) DDLogError(@"[Line %d] %s %@\n",__LINE__,__func__,[NSString stringWithFormat:__VA_ARGS__])
 
-#define YZHLogWarn(...) DDLogWarn(@"%s 第%d行 %@\n",__func__,__LINE__,[NSString stringWithFormat:__VA_ARGS__])
+#define YZHLogWarn(...) DDLogWarn(@"[Line %d] %s %@\n",__LINE__,__func__,[NSString stringWithFormat:__VA_ARGS__])
 
-#define YZHLogInfo(...) DDLogInfo(@"%s 第%d行 %@\n",__func__,__LINE__,[NSString stringWithFormat:__VA_ARGS__])
+#define YZHLogInfo(...) DDLogInfo(@"[Line %d] %s %@\n",__LINE__,__func__,[NSString stringWithFormat:__VA_ARGS__])
 
-#define YZHLogDebug(...) DDLogDebug(@"%s 第%d行 %@\n",__func__,__LINE__,[NSString stringWithFormat:__VA_ARGS__])
+#define YZHLogDebug(...) DDLogDebug(@"[Line %d] %s %@\n",__LINE__,__func__,[NSString stringWithFormat:__VA_ARGS__])
 
 typedef void(^YZHUploadFileLogBlock)(NSString * _Nonnull logFilePath);
 
