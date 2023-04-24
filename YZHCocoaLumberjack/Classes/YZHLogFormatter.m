@@ -36,6 +36,7 @@
         case DDLogFlagWarning:  logLevel = @"Warn   ";  break;
         case DDLogFlagInfo:     logLevel = @"Info   ";  break;
         case DDLogFlagDebug:    logLevel = @"Debug  ";  break;
+        case DDLogFlagVerbose:  logLevel = @"Verbose";  break;
         default:                logLevel = @"Default";  break;
     }
     

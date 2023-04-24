@@ -6,7 +6,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <CocoaLumberjack/CocoaLumberjack.h>
 
 /*
  ddLogLevel可依照需要设置为:
@@ -16,7 +15,17 @@
  - (NSString *)formatLogMessage:(DDLogMessage *)logMessage
  方法.
  */
-static const DDLogLevel ddLogLevel = DDLogLevelDebug;
+#import <CocoaLumberjack/CocoaLumberjack.h>
+
+#ifdef DEBUG
+static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
+#else
+static const DDLogLevel ddLogLevel = DDLogLevelWarning;
+#endif
+
+#ifndef LOG_LEVEL_DEF
+    #define LOG_LEVEL_DEF ddLogLevel
+#endif
 
 #define YZHLogError(...) DDLogError(@"[Line %d] %s %@\n",__LINE__,__func__,[NSString stringWithFormat:__VA_ARGS__])
 
