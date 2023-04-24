@@ -43,7 +43,11 @@
     NSString *dateAndTime = [threadUnsafeDateFormatter stringFromDate:logMessage->_timestamp];
     NSString *logMsg = logMessage->_message;
     
+#ifdef DEBUG
+    return [NSString stringWithFormat:@"[%@] %@", logLevel, logMsg];
+#else
     return [NSString stringWithFormat:@"[%@] [%@] %@", logLevel, dateAndTime, logMsg];
+#endif
 }
 
 @end
